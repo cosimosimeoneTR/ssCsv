@@ -1,6 +1,6 @@
 # ssCsv - Simple Stupid CSV creator
 
-##General notes
+## General notes
 Scope of this script is produce CSVs from (Oracle) database.
 It groups queries into `collections`, which are 1:1 to the CSV file you want to produce.
 A collection is a JSON file containing query[es] needed to query data, header, etc.
