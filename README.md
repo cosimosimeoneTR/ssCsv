@@ -118,10 +118,8 @@ $ ./ssCsv.py -c collections/collection001.json -d 1
 
 ###Parameter list
 Here they are:
-|Short parameter|Long parameter (double minus)|Allowed values|Value help|Value description|
-|---|---|---|---|---|
-|-c|--collectionToRun||(optional, default all collections)|Collection file to run, eg: ```collections/collection001.json```|
-|-d|--debugLevel|[0/1]|(optional, default 0)|Debug level (0=INFO, 1=DEBUG)
 
-
-
+| Short parameter | Long parameter | Allowed values | Value help | Value description |
+| --- | --- | --- | --- | --- |
+| -c | --collectionToRun | (none) | (optional, default all collections) | Collection file to run, eg: `collections/collection001.json` |
+| -d | --debugLevel|[0/1] | (optional, default 0) | Debug level (0=INFO, 1=DEBUG) |
