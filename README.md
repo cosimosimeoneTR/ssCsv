@@ -21,7 +21,7 @@ The `ssCsv.py.conf` file contains global configuration.
 A `ssCsv.py.conf` example:
 ```
 # This is a comment
-arraySeparator=¬
+arraySeparator=Â¬
 replaceCharFrom1="
 replaceCharTo1=""
 replaceCharFrom2=\
@@ -117,6 +117,7 @@ $ ./ssCsv.py -c collections/collection001.json -d 1
 ```
 
 ###Parameter list
+
 |Short parameter|Long parameter (double minus)|Allowed values|Value help|Value description|
 |---|
 |-c|--collectionToRun||(optional, default all collections)|Collection file to run, eg: ```collections/collection001.json```|
