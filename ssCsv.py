@@ -126,10 +126,6 @@ def queryRunner ( queryIdx ):
     # With first query results, structures are initialized
     if queryIdx == 0:
       spoolData[resultId] = ''
-
-      #for queryIdx2 in range(queryNum):
-      #  cachedResults[queryIdx2][resultId]=''
-
       thisDataSet=resultValues
 
     else:
@@ -316,20 +312,22 @@ for collectionFile in collectionFilesArray:
     else:
 
       for resultId in spoolData:
-        if len(cachedResults[queryIdx][resultId]) > 0:
+        #if len(cachedResults[queryIdx][resultId]) > 0:
+        if len(cachedResults[queryIdx].get(resultId,'')) > 0:
           spoolData[resultId]+='"'
       for resultId in spoolData:
-        if len(cachedResults[queryIdx][resultId]) > 0:
+        if len(cachedResults[queryIdx].get(resultId,'')) > 0:
           spoolData[resultId]+=cachedResults[queryIdx][resultId].rstrip(localOptions['arraySeparator'])
 
       for resultId in spoolData:
-        if len(cachedResults[queryIdx][resultId]) > 0:
+        if len(cachedResults[queryIdx].get(resultId,'')) > 0:
           spoolData[resultId]+='",'
         else:
           spoolData[resultId]+=','
 
         # Free some memory
-        del cachedResults[queryIdx][resultId]
+        if len(cachedResults[queryIdx].get(resultId,'')) > 0:
+          del cachedResults[queryIdx][resultId]
 
     # Free some more memory
     cachedResults[queryIdx] = None
