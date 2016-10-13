@@ -1,0 +1,22 @@
+2016-10-13 15:23:23,671 [          14] - Hello you!
+2016-10-13 15:23:23,671 [          15] - parCollectionToRun: collections/collection001.json
+2016-10-13 15:23:23,671 [          15] - parDebugLevel: 1
+2016-10-13 15:23:23,674 [          18] - collectionFilesArray=collections/collection001.json
+2016-10-13 15:23:23,676 [          19] - --- Now running collection collections/collection001.json
+2016-10-13 15:23:23,676 [          20] - Opening file /tmp/collection001.csv.gz
+2016-10-13 15:23:23,676 [          20] - - Executing query 1/2
+2016-10-13 15:23:23,677 [          20] - - - This is query 0
+2016-10-13 15:23:23,677 [          21] - - - DB connection: rcs_fabric_Loader/rcs_fabric_Loader_Dev@//staging-dev-dtc-db.int.thomsonreuters.com:1521/do.dev
+2016-10-13 15:23:23,677 [          21] - - - cxOracle_arraySize: 99999
+2016-10-13 15:23:24,586 [         930] - Query:{select rownum, sysdate from dual}
+2016-10-13 15:23:24,799 [        1143] - - - DONE query 0
+2016-10-13 15:23:24,801 [        1144] - - Executing query 2/2
+2016-10-13 15:23:24,802 [        1145] - - - This is query 1
+2016-10-13 15:23:24,802 [        1146] - - - DB connection: rcs_fabric_Loader/rcs_fabric_Loader_Dev@//staging-dev-dtc-db.int.thomsonreuters.com:1521/do.dev
+2016-10-13 15:23:24,802 [        1146] - - - cxOracle_arraySize: 99999
+2016-10-13 15:23:25,687 [        2031] - Query:{select rownum, '1' as something from dual union select rownum, '2' as something from dual}
+2016-10-13 15:23:26,218 [        2562] - - - DONE query 1
+2016-10-13 15:23:27,222 [        3566] - Spooling now
+2016-10-13 15:23:27,224 [        3568] - Spooling every 9000 rows
+2016-10-13 15:23:27,225 [        3569] - Ended elaborating collections/collection001.json; 1 rows in 3.548669 seconds 
+2016-10-13 15:23:27,225 [        3569] - Have a nice day!

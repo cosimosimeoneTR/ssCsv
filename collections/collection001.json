@@ -1,0 +1,17 @@
+{
+   "outFileName" : "/tmp/collection001.csv.gz"
+  ,"outFileType" : "csv"
+  ,"queries":
+  [
+    {
+     "query": "select rownum, sysdate from dual"
+    ,"queryType": "simple"
+    ,"queryHeader": "id, date"
+   }
+   ,{
+     "query": "select rownum, '1' as something from dual union select rownum, '2' as something from dual"
+    ,"queryType": "array"
+    ,"queryHeader": "something :number[]"
+   }
+  ]
+}
