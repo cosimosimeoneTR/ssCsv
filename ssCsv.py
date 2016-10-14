@@ -306,7 +306,8 @@ for collectionFile in collectionFilesArray:
           spoolData[resultId]+=cachedResults[queryIdx][resultId]
 
         # Free some memory
-        del cachedResults[queryIdx][resultId]
+        if cachedResults[queryIdx].get(resultId,'') != '':
+          del cachedResults[queryIdx][resultId]
 
     # Array queryType
     else:
